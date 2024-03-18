@@ -59,6 +59,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-left: 20px;
 }
 
 .contLogo .logo a img{
@@ -76,6 +77,10 @@ header{
 .nav ul{
     display: flex;
     gap: 150px;
+}
+
+.contLogo #toggle, .contLogo label{
+    display: none;
 }
 
 
@@ -174,6 +179,24 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.desArticulos .enlace-imagen {
+    position: relative;
+}
+
+.desArticulos .imagen-hover {
+    width: 100%;
+    height: 288px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+}
+
+.desArticulos .enlace-imagen .imagen-hover:hover {
+    opacity: 1;
 }
 
 .direcciones button{
@@ -327,7 +350,7 @@ header{
     align-items: center;
     justify-content: center;
     gap: 45px;
-    margin: 140px;
+    margin: 100px;
 }
 
 .contGrid{
@@ -379,50 +402,67 @@ header{
     
 }
 
-@media (max-width:1200px){
-    .nav ul{
-        flex-wrap: wrap;
-        gap: 50px;
-        padding: 10px;
-    }
-
+@media (max-width:744px){
+    
 }
-
-@media (max-width:1024px){
-
-}
-
 
 @media (max-width:320px){
-    /* Header */
-    .nav ul{
-        flex-direction: column;
-        gap: 2px;
+
+    /* Header  */
+
+    .eslogan{
+        font-size: 12px;
     }
 
     .contLogo{
         justify-content: center;
     }
 
-    .iconosHeader{
+    .iconosHI{
         display: none;
     }
 
-    /* Main Index */
-
-    .articulos{
-        flex-direction: column;
+    .nav{
+        display: none;
     }
+
+    .contLogo label{
+        display: inline-flex;
+        cursor: pointer;
+    }
+
+    .nav ul{
+        flex-direction: column;
+        gap: 10px;
+        background-color: #B2A8D2;
+        align-items: center;
+    }
+
 
     /* Footer */
-    .whatsapp{
-        display: none;
-    }
 
     .contGeneral{
         flex-direction: column;
     }
-}   
 
+    .whatsapp{
+        margin: 5px;
+    }
+    
+    /* Main index */
+    .articulos{
+        flex-direction: column;
+    }
 
+    .imagenMain{
+        height: 400px;
+    }
+
+    .imagenMain img{
+        width: 100%;
+        height: 100%;
+    }
+
+    
+}
 
