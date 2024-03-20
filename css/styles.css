@@ -42,9 +42,16 @@ main{
 
 header{
     width: 100%;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 20px 100px 30px;
+    grid-template-areas:
+    "seccion-1 seccion-1 seccion-1"
+    "seccion-2 seccion-3 seccion-4"
+    "seccion-5 seccion-5 seccion-5"
+    ;
     align-items: center;
+    gap: 10px;
 }
 
 .eslogan{
@@ -52,37 +59,43 @@ header{
     justify-content: center;
     width: 100%;
     background-color: #B5B9DE;
+    grid-area: seccion-1;
 }
 
-.contLogo{
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 20px;
+.iconosI{
+    justify-self: center;
+    grid-area: seccion-2;
 }
 
-.contLogo .logo a img{
+.logo{
+    justify-self: center;
+    grid-area: seccion-3;
+}
+
+.logo a img{
     width: 80px;
     height: 80px;
-    margin: 45px;
+}
+
+.iconosCS{
+    justify-self: center;
+    grid-area: seccion-4;
 }
 
 .nav{
-    width: 100%;
     display: flex;
-    justify-content: center;
+    grid-area: seccion-5;
+    justify-self: center;
 }
 
 .nav ul{
     display: flex;
-    gap: 150px;
+    gap: 200px;
 }
 
-.contLogo #toggle, .contLogo label{
+.menu-toggle ,#menu-toggle{
     display: none;
 }
-
 
 /* Footer */
 .contenedorFooter{
@@ -396,29 +409,25 @@ header{
     order: 8;
 }
 
-/* Media header */
 
 @media (max-width:1440px){
     
 }
 
-@media (max-width:744px){
-    
-}
+@media (max-width:1376px){
 
-@media (max-width:320px){
-
-    /* Header  */
-
-    .eslogan{
-        font-size: 12px;
+    header{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 20px 100px;
+        grid-template-areas:
+        "seccion-1 seccion-1 seccion-1"
+        "seccion-2 seccion-3 seccion-4"
+        ;
     }
 
-    .contLogo{
-        justify-content: center;
-    }
-
-    .iconosHI{
+    .iconosI{
         display: none;
     }
 
@@ -426,43 +435,15 @@ header{
         display: none;
     }
 
-    .contLogo label{
+    .menu-toggle{
         display: inline-flex;
+        grid-area: seccion-2;
+        justify-self: center;
+        font-size: 30px;
         cursor: pointer;
     }
 
-    .nav ul{
-        flex-direction: column;
-        gap: 10px;
-        background-color: #B2A8D2;
-        align-items: center;
-    }
-
-
-    /* Footer */
-
-    .contGeneral{
-        flex-direction: column;
-    }
-
-    .whatsapp{
-        margin: 5px;
-    }
-    
-    /* Main index */
-    .articulos{
-        flex-direction: column;
-    }
-
-    .imagenMain{
-        height: 400px;
-    }
-
-    .imagenMain img{
-        width: 100%;
-        height: 100%;
-    }
-
-    
 }
+
+
 
