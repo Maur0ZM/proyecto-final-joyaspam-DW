@@ -166,6 +166,10 @@ header{
     bottom: 38%; 
     transform: translateX(-50%); 
   }
+
+  .imagenMain2 .imagen-principal-1-r{
+    display: none;
+  }
   
 .contNovedades{
     width: 100%;
@@ -256,12 +260,11 @@ header{
 
 .mainNosotros{
     width: 100%;
-    height: 900px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
+    margin: 100px 0 100px 0;
 }
 
 .contNosotros{
@@ -326,12 +329,12 @@ header{
     align-items: center;
     justify-content: center;
     gap: 70px;
-    height: 500px;
     width: 100%;
+    margin: 50px 0px 100px 0px;
 }
 
 .contPC-G h1{
-    margin-top: 30px;
+    margin: 30px 0px 0px 0px;
 }
 .contArticulosPC{
     display: flex;
@@ -416,6 +419,8 @@ header{
 
 @media (max-width:1376px){
 
+    /* Header */
+
     header{
         width: 100%;
         display: grid;
@@ -454,6 +459,12 @@ header{
         gap: 10px;
         align-items: center;
     }
+
+    /* Main index */
+
+    .imagenMain2 button {
+        bottom: 35%;
+    }
 }
 
 @media (max-width:1200px){
@@ -469,18 +480,95 @@ header{
         flex-wrap: wrap;
         justify-content: center;
     }
+
+    /* Main index */
+
+    /* .imagenMain2 .imagen-principal-1{
+        display: none;
+    }
+
+    .imagenMain2 .imagen-principal-1-r{
+        display: inline-flex;
+    } */
 }
 
-@media (max-width:485){
+@media (max-width:1000px){
 
+    /* main index */
+    .imagenMain2 .imagen-principal-1{
+        display: none;
+    }
+
+    .imagenMain2 .imagen-principal-1-r{
+        display: inline-flex;
+    }
+
+    .imagenMain2 button{
+        left: 50%;
+    }
+}
+@media (max-width:485px){
+
+    /* main index */
+    .imagenMain2 button{
+        width: 125px;
+        height: 40px;
+    }
+
+    .contGeneral{
+        flex-direction: column;
+    }
+
+    /* main nosotros */
+
+    .contNosotros{
+        width: 90%;
+    }
 }
 
-@media (max-width:375px){
+@media (max-width:320px){
+
+    /* Header */
+
+    .eslogan{
+        font-size: 13px;
+    }
+
+    /* Footer */
+
+    .whatsapp{
+        margin: 5px;
+    }
+
+    /* Main index */
     .articulos{
         flex-direction: column;
     }
 
     .direcciones{
         display: none;
+    }
+
+    .imagenMain2 button{
+        width: 100px;
+        height: 35px;
+        bottom: 30%;
+        font-size: 12px;
+    }
+
+    /* main nosotros */
+
+    .contNosotros{
+        width: 90%;
+    }
+
+    .fotoPerfil{
+        height: 300px;
+    }
+
+    /* main PYC */
+
+    .contPC-G h1{
+        font-size: 17px;
     }
 }
