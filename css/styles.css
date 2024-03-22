@@ -238,7 +238,7 @@ header{
     align-items: center;
     justify-content: center;
     gap: 45px;
-    margin-top: 100px;
+    margin-top: 30px;
     margin-bottom: 100px;
 }
 
@@ -264,7 +264,7 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 100px 0 100px 0;
+    margin: 50px 0 100px 0;
 }
 
 .contNosotros{
@@ -279,7 +279,7 @@ header{
 .fotoPerfil{
     background-image: url(../assent/img/foto-perfil.jpg);
     width: 100%;
-    height: 500px;
+    height: 300px;
     background-size: 100% 100%;
 }
 
@@ -336,6 +336,7 @@ header{
 .contPC-G h1{
     margin: 30px 0px 0px 0px;
 }
+
 .contArticulosPC{
     display: flex;
     align-items: center;
@@ -348,14 +349,14 @@ header{
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    width: 50%;
+    width: 90%;
 }
 .articuloPC-2{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    width: 50%;
+    width: 90%;
 }
 
 /* Main collares */
@@ -469,27 +470,20 @@ header{
 
 @media (max-width:1200px){
 
-    /* .direcciones{
+    .direcciones{
         display: none;
-    } */
+    } 
 
     .contArticulos{
         gap: 20px;
+        width: 100%;
+        scrollbar-width: none;
+        overflow-x: auto;
     }
+
     .articulos{
-        flex-wrap: wrap;
-        justify-content: center;
+        margin-left: 20%;
     }
-
-    /* Main index */
-
-    /* .imagenMain2 .imagen-principal-1{
-        display: none;
-    }
-
-    .imagenMain2 .imagen-principal-1-r{
-        display: inline-flex;
-    } */
 }
 
 @media (max-width:1000px){
@@ -513,10 +507,15 @@ header{
     .imagenMain2 button{
         width: 125px;
         height: 40px;
+        bottom: 30%;
     }
 
     .contGeneral{
         flex-direction: column;
+    }
+
+    .direcciones{
+        display: none;
     }
 
     /* main nosotros */
@@ -524,7 +523,37 @@ header{
     .contNosotros{
         width: 90%;
     }
+
+    /* main aros */
+
+    .carrusel-cont{
+        width: 100%;
+        overflow-x: auto;
+        scrollbar-width: none;
+    }
+
+    .carrusel-cont .seccion-1{
+        margin-left: 20%;
+     }
+
+     .carrusel-cont .seccion-2{
+        margin-left: 20%;
+     }
+
+    
 }
+
+@media (max-width:540px){
+    .contPC-G h1{
+        font-size: 150%;
+    }
+}
+
+@media (max-width:375px){
+    .contPC-G h1{
+        font-size: 135%;
+    }
+}  
 
 @media (max-width:320px){
 
@@ -541,13 +570,6 @@ header{
     }
 
     /* Main index */
-    .articulos{
-        flex-direction: column;
-    }
-
-    .direcciones{
-        display: none;
-    }
 
     .imagenMain2 button{
         width: 100px;
@@ -571,4 +593,8 @@ header{
     .contPC-G h1{
         font-size: 17px;
     }
+
+    /* main aros */
+
+
 }
