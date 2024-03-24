@@ -291,12 +291,12 @@ header{
 
 .contCuidado{
     width: 100%;
-    height: 700px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 30px;
+    margin-top: 30px;
 }
 
 .articulo-1{
@@ -318,11 +318,11 @@ header{
     flex-direction: column;
     align-items: center;
     gap: 30px;
+    margin-bottom: 50px;
 }
 .titulo{
     display: flex;
     justify-content: center;
-    margin-top: 50px;
 }
 
 /* Main PC y garantia */
