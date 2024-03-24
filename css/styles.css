@@ -167,7 +167,11 @@ header{
     transform: translateX(-50%); 
   }
 
-  .imagenMain2 .imagen-principal-1-r{
+  .imagenMain .imagen-principal-1-r{
+    display: none;
+  }
+
+  .imagenMain2 .imagen-principal-2-r{
     display: none;
   }
   
@@ -279,7 +283,7 @@ header{
 .fotoPerfil{
     background-image: url(../assent/img/foto-perfil.jpg);
     width: 100%;
-    height: 300px;
+    height: 450px;
     background-size: 100% 100%;
 }
 
@@ -367,7 +371,7 @@ header{
     align-items: center;
     justify-content: center;
     gap: 45px;
-    margin: 100px;
+    margin: 50px 0px 150px 0px;
 }
 
 .contGrid{
@@ -451,7 +455,7 @@ header{
 
     .nav{
         width: 100%;
-        background-color: #B2A8D2;
+        background-color: #B5B9DE;
         justify-content: center;
     }
 
@@ -470,6 +474,7 @@ header{
 
 @media (max-width:1200px){
 
+    /* main index */
     .direcciones{
         display: none;
     } 
@@ -484,16 +489,49 @@ header{
     .articulos{
         margin-left: 20%;
     }
+
+    /* main aros */
+
+    .carrusel-aros{
+        width: 100%;
+        overflow-x: auto;
+        scrollbar-width: none;
+    }
+
+    .seccion-1{
+        margin-left: 20%;
+    }
+
+    .seccion-2{
+        margin-left: 20%;
+    }
+
+    /* main collares */
+
+    .contGrid{
+        width: 100%;
+        overflow-x: auto;
+        scrollbar-width: none;
+    }
+
 }
 
 @media (max-width:1000px){
 
     /* main index */
-    .imagenMain2 .imagen-principal-1{
+    .imagenMain .imagen-principal-1{
         display: none;
     }
 
-    .imagenMain2 .imagen-principal-1-r{
+    .imagenMain .imagen-principal-1-r{
+        display: inline-flex;
+    }
+
+    .imagenMain2 .imagen-principal-2{
+        display: none;
+    }
+
+    .imagenMain2 .imagen-principal-2-r{
         display: inline-flex;
     }
 
@@ -501,6 +539,18 @@ header{
         left: 50%;
     }
 }
+
+@media (max-width:768px){
+    /* main nosotros */
+    .contNosotros{
+        width: 80%;
+    }
+
+    .fotoPerfil{
+        width: 400px;
+    }
+}
+
 @media (max-width:485px){
 
     /* main index */
@@ -585,7 +635,8 @@ header{
     }
 
     .fotoPerfil{
-        height: 300px;
+        width: 250px;
+        height: 200px;
     }
 
     /* main PYC */
