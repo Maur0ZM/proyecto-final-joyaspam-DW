@@ -1,0 +1,29 @@
+footer{
+    .contenedorFooter{
+        background-color: #B5B9DE;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .contGeneral{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            margin: 50px;
+            .contFoot{
+                li{
+                    margin: 15px;
+                }
+            }
+            .contRedes{
+                margin: 10px;
+            } 
+        }    
+    }
+    .whatsapp{
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        margin: 5px;
+    }
+}

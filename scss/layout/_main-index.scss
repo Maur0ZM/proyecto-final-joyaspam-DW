@@ -1,0 +1,95 @@
+.imagenMain{
+    img{
+        width: 100%;
+    height: auto;
+    }
+    .imagen-principal-1-r{
+        display: none;
+      }    
+}
+
+.imagenMain2 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+    img{
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+    button{
+        all: unset;
+        cursor: pointer;
+        width: 150px;
+        height: 50px;
+        background-color: #B2A8D2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        /* Para que el botton siga en la misma posicion
+        tengo que ocupar %, no px absoluto */
+        left: 25%; 
+        bottom: 38%; 
+        transform: translateX(-50%); 
+    }
+    .imagen-principal-2-r{
+        display: none;
+      }    
+}
+
+.contNovedades{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin: 100px 0px 100px 0px;
+    .botonVerMas{
+        width: 100px;
+        height: 30px;
+        background-color: #B5B9DE;
+        border: none;
+        cursor: pointer;
+    }
+    .contArticulos{
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        .direcciones{
+            button{
+                all: unset;
+                cursor: pointer;
+            }
+        }
+        .articulos{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            .desArticulos{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .enlace-imagen{
+                    position: relative;
+                }
+                .imagen-hover{
+                    width: 100%;
+                    height: 288px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    opacity: 0; 
+                    transition: opacity 0.3s ease;
+                    &:hover{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}

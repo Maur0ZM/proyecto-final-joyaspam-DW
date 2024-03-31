@@ -1,0 +1,49 @@
+.mainCollares {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+    margin: 50px 0px 150px 0px;
+    .contGrid{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(0, 224px));
+        grid-template-rows: repeat(2, 330px);
+        gap: 30px;
+        justify-content: center;
+        width: 100%;
+        .artCollares {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img{
+                width: 100%;
+                height: 90%;
+            }
+            .collar-1{
+                order: 3;
+            }
+            .collar-2{
+                order: 2;
+            }
+            .collar-3{
+                order: 4;
+            }
+            .collar-4{
+                order: 1;
+            }
+            .collar-5{
+                order: 5;
+            }
+            .collar-6{
+                order: 6;
+            }
+            .collar-7{
+                order: 7;
+            }
+            .collar-8{
+                order: 8;
+            }
+        }
+    }
+}

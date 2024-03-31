@@ -1,0 +1,34 @@
+.contAros{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    button{
+        all: unset;
+        cursor: pointer;
+    }
+    .seccion-1{
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        .desArticulos{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    .seccion-2{
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        .desArticulos{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}

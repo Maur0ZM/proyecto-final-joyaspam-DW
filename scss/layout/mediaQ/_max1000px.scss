@@ -1,0 +1,154 @@
+@media (max-width:862px){
+    /* Header */
+    header{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        .iconosI{
+            display: none;
+        }
+        .nav{
+            display: none;
+        }
+        .menu-toggle{
+            display: inline-flex;
+            grid-area: seccion-2;
+            justify-self: center;
+            font-size: 30px;
+            cursor: pointer;
+        }
+        #menu-toggle:checked ~ .nav{
+            display: inline-flex;
+        }
+        .nav{
+            width: 100%;
+            background-color: #B5B9DE;
+            justify-content: center;
+            .menu{
+                flex-direction: column;
+                gap: 10px;
+                align-items: center;
+            }
+        }
+    }
+}
+
+@media (max-width:768px){
+    /* main nosotros */
+
+    .mainNosotros{
+        .contNosotros{
+        width: 80%;
+        .fotoPerfil{
+            width: 400px;
+        }
+    }
+    }
+    
+    /* main index */
+    .articulos{
+        justify-content: center
+    }
+}
+
+@media (max-width:485px){
+
+    /* main index */
+    .imagenMain2 button{
+        width: 125px;
+        height: 40px;
+        bottom: 30%;
+    }
+
+    /* Footer */
+
+    .contGeneral{
+        flex-direction: column;
+    }
+
+    /* main nosotros */
+
+    .mainNosotros{
+        .contNosotros{
+        width: 90%;
+    }
+    }
+    /* main aros */
+
+    
+}
+
+@media (max-width:540px){
+    .contPC-G h1{
+        font-size: 150%;
+    }
+}
+
+@media (max-width:376px){
+    .contPC-G h1{
+        font-size: 135%;
+    }
+
+    /* main nosotros */
+    .mainNosotros{
+        .contNosotros{
+        width: 90%;
+        .fotoPerfil{
+            width: 300px;
+            height: 250px; 
+            }
+        }
+    }
+
+}  
+
+@media (max-width:320px){
+
+    /* Header */
+
+    .eslogan{
+        font-size: 13px;
+    }
+
+    /* Footer */
+    footer{
+        .whatsapp{
+            margin: 1px;
+        }
+    }  
+    /* Main index */
+
+    .imagenMain2{
+        button{
+            width: 100px;
+        height: 35px;
+        bottom: 30%;
+        font-size: 12px;
+        }
+    }
+
+
+    .articulos{
+        flex-direction: column;
+    }
+
+    /* main nosotros */
+    .mainNosotros{
+        .contNosotros{
+        width: 90%;
+        .fotoPerfil{
+        width: 250px;
+        height: 200px;
+        }
+    }
+    }
+    /* main PYC */
+
+    .contPC-G{
+        h1{
+            font-size: 17px;
+        }
+    }
+    /* main aros */
+}

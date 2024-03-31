@@ -1,0 +1,63 @@
+@media (max-width:1376px){
+    /* Header */
+    .nav{
+        .menu{
+            gap: 100px;
+        }  
+    }
+    /* Main index */
+
+    .imagenMain2 button {
+        bottom: 35%;
+    }
+}
+
+@media (max-width:1250px) {
+    .direcciones{
+        display: none;
+    } 
+}
+
+@media (max-width:1200px){
+
+    /* main index */
+    .articulos{
+        flex-wrap: wrap;
+    }
+
+    /* main aros */
+
+    .seccion-1{
+        flex-wrap: wrap;
+    }
+
+    .seccion-2{
+        flex-wrap: wrap;
+    }
+
+    /* main collares */
+
+}
+@media (max-width:1000px){
+
+    /* main index */
+    .imagenMain{
+        .imagen-principal-1{
+            display: none; 
+        }
+        .imagen-principal-1-r{
+            display: inline-flex;  
+        }
+    }
+    .imagenMain2{
+        .imagen-principal-2{
+            display: none; 
+        }
+        .imagen-principal-2-r{
+            display: inline-flex;  
+        }
+        button{
+            left: 50%;
+        }
+    }
+}
