@@ -50,6 +50,17 @@
     .articulos{
         justify-content: center
     }
+
+    /* Footer */
+    footer{
+        .contenedorFooter{
+            .contGeneral{
+                .contFoot, .contRedes{
+                    width: 100%;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width:485px){

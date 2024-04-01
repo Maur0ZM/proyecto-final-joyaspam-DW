@@ -8,10 +8,10 @@ footer{
         .contGeneral{
             width: 100%;
             display: flex;
-            justify-content: space-around;
+            justify-content: center;  
             margin: 50px;
-            .contFoot{
-                width: 25%;
+            .contFoot, .contRedes{
+                width: 30%; 
                 li{
                     margin: 15px;
                     &:hover{

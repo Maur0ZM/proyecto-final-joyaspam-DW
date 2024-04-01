@@ -73,13 +73,13 @@ footer .contenedorFooter {
   footer .contenedorFooter .contGeneral {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     margin: 50px; }
-    footer .contenedorFooter .contGeneral .contFoot {
-      width: 25%; }
-      footer .contenedorFooter .contGeneral .contFoot li {
+    footer .contenedorFooter .contGeneral .contFoot, footer .contenedorFooter .contGeneral .contRedes {
+      width: 30%; }
+      footer .contenedorFooter .contGeneral .contFoot li, footer .contenedorFooter .contGeneral .contRedes li {
         margin: 15px; }
-        footer .contenedorFooter .contGeneral .contFoot li:hover {
+        footer .contenedorFooter .contGeneral .contFoot li:hover, footer .contenedorFooter .contGeneral .contRedes li:hover {
           font-weight: bold; }
     footer .contenedorFooter .contGeneral .contRedes {
       margin: 10px; }
@@ -415,7 +415,10 @@ footer .whatsapp {
       width: 400px; }
   /* main index */
   .articulos {
-    justify-content: center; } }
+    justify-content: center; }
+  /* Footer */
+  footer .contenedorFooter .contGeneral .contFoot, footer .contenedorFooter .contGeneral .contRedes {
+    width: 100%; } }
 
 @media (max-width: 485px) {
   /* main index */
