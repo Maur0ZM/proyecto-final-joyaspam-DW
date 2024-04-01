@@ -75,8 +75,12 @@ footer .contenedorFooter {
     display: flex;
     justify-content: space-around;
     margin: 50px; }
-    footer .contenedorFooter .contGeneral .contFoot li {
-      margin: 15px; }
+    footer .contenedorFooter .contGeneral .contFoot {
+      width: 25%; }
+      footer .contenedorFooter .contGeneral .contFoot li {
+        margin: 15px; }
+        footer .contenedorFooter .contGeneral .contFoot li:hover {
+          font-weight: bold; }
     footer .contenedorFooter .contGeneral .contRedes {
       margin: 10px; }
 
@@ -108,7 +112,7 @@ footer .whatsapp {
     cursor: pointer;
     width: 150px;
     height: 50px;
-    background-color: #B2A8D2;
+    background-image: linear-gradient(135deg, #B5B9DE 40%, #d5d7e3 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -117,7 +121,11 @@ footer .whatsapp {
         tengo que ocupar %, no px absoluto */
     left: 25%;
     bottom: 38%;
-    transform: translateX(-50%); }
+    transform: translateX(-50%);
+    border-radius: 5px;
+    transition: box-shadow 0.5s ease; }
+    .imagenMain2 button:hover {
+      box-shadow: 2px 2px 5px #d5d7e3; }
   .imagenMain2 .imagen-principal-2-r {
     display: none; }
 
@@ -132,9 +140,32 @@ footer .whatsapp {
   .contNovedades .botonVerMas {
     width: 100px;
     height: 30px;
-    background-color: #B5B9DE;
-    border: none;
-    cursor: pointer; }
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #B5B9DE; }
+    .contNovedades .botonVerMas .texto {
+      position: relative;
+      z-index: 1; }
+    .contNovedades .botonVerMas button {
+      width: 100%;
+      height: 100%;
+      background-color: #b5b9de;
+      cursor: pointer;
+      border: none;
+      top: 0;
+      left: 0;
+      z-index: 0; }
+      .contNovedades .botonVerMas button::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        transition: left 0.5s ease; }
+      .contNovedades .botonVerMas button:hover::before {
+        left: 0; }
   .contNovedades .contArticulos {
     display: flex;
     align-items: center;
