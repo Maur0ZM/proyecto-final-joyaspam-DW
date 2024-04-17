@@ -11,9 +11,10 @@
 .imagenMain2 {
     width: 100%;
     height: auto;
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: center;
     position: relative;
+    @include flex(none, none, center, none);
     img{
         width: 100%;
         height: 100%;
@@ -25,9 +26,10 @@
         width: 150px;
         height: 50px;
         background-image: linear-gradient(135deg, #B5B9DE 40%, #d5d7e3 100%);
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        @include flex(none, center, center, none);
         position: absolute;
         /* Para que el botton siga en la misma posicion
         tengo que ocupar %, no px absoluto */
@@ -47,11 +49,12 @@
 
 .contNovedades{
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // justify-content: center;
+    // gap: 40px;
+    @include flex(column, center, center, 40px);
     margin: 100px 0px 100px 0px;
     .botonVerMas{
         width: 100px;
@@ -89,9 +92,10 @@
     }
     
     .contArticulos{
-        display: flex;
-        align-items: center;
-        gap: 50px;
+        // display: flex;
+        // align-items: center;
+        // gap: 50px;
+        @include flex(none, none, center, 50px);
         .direcciones{
             button{
                 all: unset;
@@ -99,14 +103,16 @@
             }
         }
         .articulos{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 30px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            // gap: 30px;
+            @include flex(none, center, center, 30px);
             .desArticulos{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
+                // display: flex;
+                // flex-direction: column;
+                // align-items: center;
+                @include flex(column, none, center, none);
                 .enlace-imagen{
                     position: relative;
                 }

@@ -1,9 +1,10 @@
 .mainCollares {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 45px;
+    @include flex(column, center, center, 45px);
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // justify-content: center;
+    // gap: 45px;
     margin: 50px 0px 150px 0px;
     .contGrid{
         @include grid(repeat(auto-fit, minmax(0, 224px)), repeat(2, 330px), center, none, none, 30px);

@@ -1,16 +1,17 @@
 header{
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 20px 100px 30px;
+    // display: grid;
+    // grid-template-columns: repeat(3, 1fr);
+    // grid-template-rows: 20px 100px 30px;
+    // align-items: center;
+    // gap: 10px; 
+    @include grid(repeat(3, 1fr), 20px 100px 30px, none, center, none, 10px);
     grid-template-areas:
     "seccion-1 seccion-1 seccion-1"
     "seccion-2 seccion-3 seccion-4"
     "seccion-5 seccion-5 seccion-5"
     ;
-    align-items: center;
-    gap: 10px;
-
+    
     .eslogan{
         display: flex;
         justify-content: center;

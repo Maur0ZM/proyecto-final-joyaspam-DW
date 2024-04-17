@@ -2,13 +2,15 @@ footer{
     .contenedorFooter{
         background-color: map-get($colores, color-fondo-footer);
         width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(none, center, center, none);
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
         .contGeneral{
             width: 100%;
-            display: flex;
-            justify-content: center;  
+            @include flex(none, center, none ,none);
+            // display: flex;
+            // justify-content: center;  
             margin: 50px;
             .contFoot, .contRedes{
                 width: 30%; 
