@@ -1,6 +1,6 @@
 footer{
     .contenedorFooter{
-        background-color: #B5B9DE;
+        background-color: map-get($colores, color-fondo-footer);
         width: 100%;
         display: flex;
         justify-content: center;

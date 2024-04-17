@@ -21,7 +21,7 @@ a {
 hr {
   width: 50%;
   margin: 30px;
-  color: #B2A8D2; }
+  color: #b2a8d2; }
 
 main {
   margin-top: 20px; }
@@ -40,7 +40,7 @@ header {
     justify-content: center;
     width: 100%;
     height: 100%;
-    background-color: #B5B9DE;
+    background-color: #b5b9de;
     grid-area: seccion-1; }
   header .iconosI {
     justify-self: center;
@@ -65,7 +65,7 @@ header {
     display: none; }
 
 footer .contenedorFooter {
-  background-color: #B5B9DE;
+  background-color: #b5b9de;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -207,19 +207,11 @@ footer .whatsapp {
   .contAros button {
     all: unset;
     cursor: pointer; }
-  .contAros .seccion-1 {
+  .contAros .seccion-1, .contAros .seccion-2 {
     display: flex;
     gap: 30px;
     justify-content: center; }
-    .contAros .seccion-1 .desArticulos {
-      display: flex;
-      flex-direction: column;
-      align-items: center; }
-  .contAros .seccion-2 {
-    display: flex;
-    gap: 30px;
-    justify-content: center; }
-    .contAros .seccion-2 .desArticulos {
+    .contAros .seccion-1 .desArticulos, .contAros .seccion-2 .desArticulos {
       display: flex;
       flex-direction: column;
       align-items: center; }
@@ -235,13 +227,17 @@ footer .whatsapp {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(0, 224px));
     grid-template-rows: repeat(2, 330px);
-    gap: 30px;
+    align-items: none;
+    grid-area: none;
     justify-content: center;
+    gap: 30px;
     width: 100%; }
     .mainCollares .contGrid .artCollares {
       display: flex;
       flex-direction: column;
-      align-items: center; }
+      justify-content: none;
+      align-items: center;
+      gap: none; }
       .mainCollares .contGrid .artCollares img {
         width: 100%;
         height: 90%; }
@@ -310,36 +306,40 @@ footer .whatsapp {
     gap: 20px;
     width: 90%; }
 
-.contCuidado {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
-  margin-top: 30px; }
-  .contCuidado .articulo-1 {
+main {
+  margin-top: 100px;
+  margin-bottom: 100px; }
+  main .contCuidado {
+    width: 100%;
     display: flex;
-    width: 50%;
     flex-direction: column;
-    align-items: center; }
-  .contCuidado .articulo-2 {
-    display: flex;
-    width: 50%;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px; }
-  .contCuidado .articulo-3 {
-    display: flex;
-    width: 50%;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
     gap: 30px;
-    margin-bottom: 50px; }
-
-.titulo {
-  display: flex;
-  justify-content: center; }
+    display: flex;
+    margin-top: 50px; }
+    main .contCuidado .articulo-1 {
+      display: flex;
+      flex-direction: column;
+      justify-content: none;
+      align-items: center;
+      gap: none;
+      width: 50%; }
+    main .contCuidado .articulo-2, main .contCuidado .articulo-3 {
+      display: flex;
+      flex-direction: column;
+      justify-content: none;
+      align-items: center;
+      gap: 30px;
+      width: 50%; }
+    main .contCuidado .articulo-3 {
+      margin-bottom: 50px; }
+  main .titulo {
+    display: flex;
+    flex-direction: none;
+    justify-content: center;
+    align-items: none;
+    gap: none; }
 
 /*Components*/
 /*MediaQ*/
@@ -360,7 +360,7 @@ footer .whatsapp {
   .articulos {
     flex-wrap: wrap; }
   /* main aros */
-  .seccion-1 {
+  .seccion-1, .contAros .seccion-2 {
     flex-wrap: wrap; }
   .seccion-2 {
     flex-wrap: wrap; }

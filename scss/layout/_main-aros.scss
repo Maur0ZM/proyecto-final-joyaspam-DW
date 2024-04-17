@@ -22,13 +22,6 @@
         }
     }
     .seccion-2{
-        display: flex;
-        gap: 30px;
-        justify-content: center;
-        .desArticulos{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+        @extend .seccion-1;
     }
 }

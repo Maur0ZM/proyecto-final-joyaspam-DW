@@ -6,16 +6,18 @@
     gap: 45px;
     margin: 50px 0px 150px 0px;
     .contGrid{
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(0, 224px));
-        grid-template-rows: repeat(2, 330px);
-        gap: 30px;
-        justify-content: center;
+        @include grid(repeat(auto-fit, minmax(0, 224px)), repeat(2, 330px), center, none, none, 30px);
+        // display: grid;
+        // grid-template-columns: repeat(auto-fit, minmax(0, 224px));
+        // grid-template-rows: repeat(2, 330px);
+        // gap: 30px;
+        // justify-content: center;
         width: 100%;
         .artCollares {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            @include flex(column, none, center, none);
+            // display: flex;
+            // flex-direction: column;
+            // align-items: center;
             img{
                 width: 100%;
                 height: 90%;
