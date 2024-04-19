@@ -97,10 +97,17 @@
         // gap: 50px;
         @include flex(none, none, center, 50px);
         .direcciones{
+            @include flex(none, center, center, none);
             button{
                 all: unset;
                 cursor: pointer;
+                
             }
+            border-radius: 50%;
+            border: solid 1px #B5B9DE;
+            height: 60px;
+            width: 60px;
+            box-shadow: 5px 5px 10px #888888;
         }
         .articulos{
             // display: flex;
