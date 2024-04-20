@@ -3,6 +3,11 @@
     margin-bottom: 100px;
     .contCuidado{
         width: 100%;
+        hr{
+            width: 50%;
+            margin: 30px;
+            color: map-get($colores, color-hr);
+        }
         @include flex(column, center, center, 30px);
         display: flex;
         // flex-direction: column;

@@ -18,11 +18,6 @@ a {
   text-decoration: none;
   color: black; }
 
-hr {
-  width: 50%;
-  margin: 30px;
-  color: #b2a8d2; }
-
 main {
   margin-top: 20px; }
 
@@ -348,6 +343,10 @@ footer .whatsapp {
     gap: 30px;
     display: flex;
     margin-top: 50px; }
+    .mainCuidado .contCuidado hr {
+      width: 50%;
+      margin: 30px;
+      color: #b2a8d2; }
     .mainCuidado .contCuidado .articulo-1 {
       display: flex;
       flex-direction: column;
@@ -373,56 +372,66 @@ footer .whatsapp {
 
 /*Components*/
 .mainProducts {
-  width: 100%; }
-  .mainProducts .contProducto {
-    display: grid;
-    grid-template-columns: 65% 35%;
-    grid-template-rows: repeat(5, 1fr);
-    align-items: none;
-    grid-area: none;
-    justify-content: none;
-    gap: none;
-    grid-template-areas: "seccion-1 seccion-3" "seccion-1 seccion-4" "seccion-2 seccion-5" ". seccion-5" ". seccion-5"; }
-    .mainProducts .contProducto .contImgProducto {
-      grid-area: seccion-1;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: none; }
-    .mainProducts .contProducto .contPoliticas {
-      grid-area: seccion-2; }
-    .mainProducts .contProducto .contDescripcionProducto {
-      grid-area: seccion-3;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: none; }
+  .mainProducts .contGeneralProducto {
+    width: 80%; }
+    .mainProducts .contGeneralProducto hr {
+      color: #b2a8d2; }
+    .mainProducts .contGeneralProducto .contProducto {
+      margin: 10px 0px 100px 0px;
+      display: grid;
+      grid-template-columns: 65% 35%;
+      grid-template-rows: repeat(5, 1fr);
       align-items: none;
-      gap: 10px; }
-    .mainProducts .contProducto .contCompra {
-      grid-area: seccion-4;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: none;
-      gap: 10px; }
-      .mainProducts .contProducto .contCompra .buttonCompra-1 {
-        height: 30%;
-        background-color: #b5b9de;
-        border: 1px solid #B5B9DE; }
-        .mainProducts .contProducto .contCompra .buttonCompra-1::before {
-          content: "";
-          position: absolute;
-          top: 0;
-          left: -100%;
-          width: 100%;
-          height: 100%;
-          background-color: white;
-          transition: left 0.5s ease; }
-        .mainProducts .contProducto .contCompra .buttonCompra-1:hover::before {
-          left: 0; }
-    .mainProducts .contProducto .contInformacionProducto {
-      grid-area: seccion-5; }
+      grid-area: none;
+      justify-content: none;
+      gap: 50px;
+      grid-template-areas: "seccion-1 seccion-3" "seccion-1 seccion-4" "seccion-1 seccion-5" "seccion-2 seccion-5" "seccion-2 seccion-5"; }
+      .mainProducts .contGeneralProducto .contProducto .contImgProducto {
+        grid-area: seccion-1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px; }
+      .mainProducts .contGeneralProducto .contProducto .accordion {
+        grid-area: seccion-2; }
+      .mainProducts .contGeneralProducto .contProducto .contDescripcionProducto {
+        grid-area: seccion-3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: none;
+        gap: 10px; }
+      .mainProducts .contGeneralProducto .contProducto .contCompra {
+        grid-area: seccion-4;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: none;
+        gap: 10px; }
+        .mainProducts .contGeneralProducto .contProducto .contCompra .buttonCompra-1 {
+          height: 30%;
+          background-color: #b5b9de;
+          border: 1px solid #B5B9DE; }
+          .mainProducts .contGeneralProducto .contProducto .contCompra .buttonCompra-1::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            transition: left 0.5s ease; }
+          .mainProducts .contGeneralProducto .contProducto .contCompra .buttonCompra-1:hover::before {
+            left: 0; }
+      .mainProducts .contGeneralProducto .contProducto .contInformacionProducto {
+        grid-area: seccion-5; }
 
 /*MediaQ*/
 @media (max-width: 1376px) {
