@@ -7,8 +7,8 @@
     }
     /* Main index */
 
-    .imagenMain2 button {
-        bottom: 35%;
+    .imagenMain2 a {
+        bottom: 30%;
     }
 }
 
@@ -46,7 +46,7 @@
     /* main collares */
     .mainCollares{
         .contGrid{
-            @include grid(repeat(2, 270px), repeat(4, 330px), center, none, none, 60px);
+            @include grid(repeat(2, 270px), repeat(4, 330px), center, none, none, 20px);
             grid-template-areas: 
             "collar-1 collar-2"
             "collar-3 collar-4"

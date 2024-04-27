@@ -112,7 +112,7 @@ footer .whatsapp {
     width: 100%;
     height: 100%;
     display: block; }
-  .imagenMain2 button {
+  .imagenMain2 a {
     all: unset;
     cursor: pointer;
     width: 150px;
@@ -131,7 +131,7 @@ footer .whatsapp {
     transform: translateX(-50%);
     border-radius: 5px;
     transition: box-shadow 0.5s ease; }
-    .imagenMain2 button:hover {
+    .imagenMain2 a:hover {
       box-shadow: 2px 2px 5px #d5d7e3; }
   .imagenMain2 .imagen-principal-2-r {
     display: none; }
@@ -207,16 +207,16 @@ footer .whatsapp {
         gap: none; }
         .contNovedades .contArticulos .articulos .desArticulos .enlace-imagen {
           position: relative; }
-        .contNovedades .contArticulos .articulos .desArticulos .imagen-hover {
-          width: 100%;
-          height: 288px;
-          position: absolute;
-          top: 0;
-          left: 0;
-          opacity: 0;
-          transition: opacity 0.3s ease; }
-          .contNovedades .contArticulos .articulos .desArticulos .imagen-hover:hover {
-            opacity: 1; }
+          .contNovedades .contArticulos .articulos .desArticulos .enlace-imagen .imagen-hover {
+            width: 100%;
+            height: 288px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: opacity 0.3s ease; }
+            .contNovedades .contArticulos .articulos .desArticulos .enlace-imagen .imagen-hover:hover {
+              opacity: 1; }
 
 .contAros {
   width: 100%;
@@ -257,7 +257,7 @@ footer .whatsapp {
     align-items: none;
     grid-area: none;
     justify-content: center;
-    gap: 40px;
+    gap: 15px;
     grid-template-areas: "collar-1 collar-2 collar-3 collar-4" "collar-5 collar-6 collar-7 collar-8";
     width: 100%; }
     .mainCollares .contGrid .collar-1 {
@@ -275,49 +275,35 @@ footer .whatsapp {
       align-items: center;
       gap: none; }
     .mainCollares .contGrid .collar-3 {
-      grid-area: collar-3;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: none; }
+      grid-area: collar-3; }
     .mainCollares .contGrid .collar-4 {
-      grid-area: collar-4;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: none; }
+      grid-area: collar-4; }
     .mainCollares .contGrid .collar-5 {
-      grid-area: collar-5;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: none; }
+      grid-area: collar-5; }
     .mainCollares .contGrid .collar-6 {
-      grid-area: collar-6;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: none; }
+      grid-area: collar-6; }
     .mainCollares .contGrid .collar-7 {
-      grid-area: collar-7;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: none; }
+      grid-area: collar-7; }
     .mainCollares .contGrid .collar-8 {
-      grid-area: collar-8;
+      grid-area: collar-8; }
+    .mainCollares .contGrid .product {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       gap: none; }
-    .mainCollares .contGrid .product {
-      flex-wrap: wrap; }
+      .mainCollares .contGrid .product .enlace-imagen {
+        position: relative; }
+        .mainCollares .contGrid .product .enlace-imagen .imagen-hover {
+          width: 100%;
+          height: 288px;
+          position: absolute;
+          top: 0;
+          left: 0;
+          opacity: 0;
+          transition: opacity 0.3s ease; }
+          .mainCollares .contGrid .product .enlace-imagen .imagen-hover:hover {
+            opacity: 1; }
 
 .mainNosotros {
   width: 100%;
@@ -522,8 +508,8 @@ footer .whatsapp {
   .nav .menu {
     gap: 100px; }
   /* Main index */
-  .imagenMain2 button {
-    bottom: 35%; } }
+  .imagenMain2 a {
+    bottom: 30%; } }
 
 @media (max-width: 1250px) {
   .contNovedades .contArticulos .direcciones {
@@ -548,7 +534,7 @@ footer .whatsapp {
     align-items: none;
     grid-area: none;
     justify-content: center;
-    gap: 60px;
+    gap: 20px;
     grid-template-areas: "collar-1 collar-2" "collar-3 collar-4" "collar-5 collar-6" "collar-7 collar-8"; }
   /* main nosotros*/
   .mainNosotros .contNosotros {
@@ -601,7 +587,7 @@ footer .whatsapp {
     display: none; }
   .imagenMain2 .imagen-principal-2-r {
     display: inline-flex; }
-  .imagenMain2 button {
+  .imagenMain2 a {
     left: 50%; } }
 
 @media (max-width: 862px) {
@@ -664,7 +650,7 @@ footer .whatsapp {
 
 @media (max-width: 485px) {
   /* main index */
-  .imagenMain2 button {
+  .imagenMain2 a {
     width: 125px;
     height: 40px;
     bottom: 30%; }
@@ -698,7 +684,7 @@ footer .whatsapp {
   footer .whatsapp {
     margin: 1px; }
   /* Main index */
-  .imagenMain2 button {
+  .imagenMain2 a {
     width: 100px;
     height: 35px;
     bottom: 30%;

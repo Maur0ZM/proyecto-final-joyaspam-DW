@@ -24,7 +24,7 @@
         .imagen-principal-2-r{
             display: inline-flex;  
         }
-        button{
+        a{
             left: 50%;
         }
     }
@@ -127,7 +127,7 @@
 @media (max-width:485px){
 
     /* main index */
-    .imagenMain2 button{
+    .imagenMain2 a{
         width: 125px;
         height: 40px;
         bottom: 30%;
@@ -192,8 +192,8 @@
     /* Main index */
 
     .imagenMain2{
-        button{
-            width: 100px;
+        a{
+        width: 100px;
         height: 35px;
         bottom: 30%;
         font-size: 12px;

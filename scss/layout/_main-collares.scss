@@ -1,18 +1,8 @@
 .mainCollares {
     @include flex(column, center, center, 45px);
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
-    // justify-content: center;
-    // gap: 45px;
     margin: 50px 0px 150px 0px;
     .contGrid{
-        @include grid(repeat(4, 270px), repeat(2, 330px), center, none, none, 40px);
-        // display: grid;
-        // grid-template-columns: repeat(auto-fit, minmax(0, 224px));
-        // grid-template-rows: repeat(2, 330px);
-        // gap: 30px;
-        // justify-content: center;
+        @include grid(repeat(4, 270px), repeat(2, 330px), center, none, none, 15px);
         grid-template-areas: 
         "collar-1 collar-2 collar-3 collar-4"
         "collar-5 collar-6 collar-7 collar-8"
@@ -28,30 +18,39 @@
         }
         .collar-3{
             grid-area: collar-3;
-            @include flex(column, center, center, none);
         }
         .collar-4{
             grid-area: collar-4;
-            @include flex(column, center, center, none);
         }
         .collar-5{
             grid-area: collar-5;
-            @include flex(column, center, center, none);
         }
         .collar-6{
-            grid-area: collar-6;
-            @include flex(column, center, center, none);
+            grid-area: collar-6;        
         }
         .collar-7{
-            grid-area: collar-7;
-            @include flex(column, center, center, none);
+            grid-area: collar-7;        
         }
         .collar-8{
             grid-area: collar-8;
-            @include flex(column, center, center, none);
         }
         .product{
-            flex-wrap: wrap;
+            @include flex(column, center, center, none);
+            .enlace-imagen{
+                position: relative;
+                .imagen-hover{
+                width: 100%;
+                height: 288px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0; 
+                transition: opacity 0.3s ease;
+                &:hover{
+                    opacity: 1;
+                }
+            }
+        }
         }
     }
 }
