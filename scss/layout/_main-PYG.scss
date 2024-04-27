@@ -4,7 +4,7 @@
     // align-items: center;
     // justify-content: center;
     // gap: 70px;
-    @include flex(column, center, center, 70px);
+    @include flex(column, center, center, 50px);
     width: 100%;
     margin: 50px 0px 100px 0px;
     h1{
@@ -15,7 +15,7 @@
         // align-items: center;
         // flex-direction: column;
         // justify-content: center;
-        @include flex(column, center, center, none);
+        @include flex(column, center, center, 10px);
     }
     .articuloPC-1{
         // display: flex;
@@ -23,9 +23,18 @@
         // align-items: center;
         // gap: 20px;
         @include flex(column, none, center, 20px);
+        ul{
+            @include flex(column, none, none, 10px);
+        }
         width: 90%;
     }
     .articuloPC-2{
+        @extend .articuloPC-1;
+    }
+    .articuloPC-3{
+        @extend .articuloPC-1;
+    }
+    .articuloPC-4{
         @extend .articuloPC-1;
     }
 }

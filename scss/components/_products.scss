@@ -39,6 +39,7 @@
                     margin: 10px 0px 10px 0px;
                     button{
                         all: unset;
+                        cursor: pointer;
                         font-size: 20px;
                     }
                 }
@@ -49,11 +50,26 @@
             }
             .contCompra{
                 grid-area: seccion-4;
-                @include flex(column, center, none, 10px);
-                .buttonCompra-1{
-                    height: 30%;
+                @include flex(column, none, none, 20px);
+                .buttonsProduc-1{
+                width: 100%;
+                height: 30px;
+                position: relative;
+                overflow: hidden;
+                border: 1px solid #B5B9DE;
+                .texto{
+                    position: relative;
+                    z-index: 1;
+                }
+                button{
+                    width: 100%;
+                    height: 100%;
                     background-color: rgba(181, 185, 222, 1);
-                    border: 1px solid #B5B9DE;
+                    cursor: pointer;
+                    border: none;
+                    top: 0;
+                    left: 0;
+                    z-index: 0;
                     &::before{
                         content: "";
                         position: absolute;
@@ -67,10 +83,19 @@
                     &:hover::before{
                         left: 0;
                     }
+                    } 
+                }
+                .buttonsProduc-2{
+                    @extend .buttonsProduc-1;
                 }
             }
+            
             .contInformacionProducto{
                 grid-area: seccion-5;
+                ul{
+                    @include flex(column, none, none, 20px);
+
+                }
             }
         }
     }

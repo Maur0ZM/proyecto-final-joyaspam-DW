@@ -1,3 +1,34 @@
+@media (max-width:1000px){
+    /*Main nosotros*/
+    .mainNosotros{
+        .contNosotros{
+        width: 70%;
+        .fotoPerfil{
+            width: 500px;
+        }
+    }
+    }
+    /* main index */
+    .imagenMain{
+        .imagen-principal-1{
+            display: none; 
+        }
+        .imagen-principal-1-r{
+            display: inline-flex;  
+        }
+    }
+    .imagenMain2{
+        .imagen-principal-2{
+            display: none; 
+        }
+        .imagen-principal-2-r{
+            display: inline-flex;  
+        }
+        button{
+            left: 50%;
+        }
+    }
+}
 @media (max-width:862px){
     /* Header */
     header{
@@ -62,7 +93,37 @@
         }
     }
 }
-
+@media (max-width:600px){
+    .mainCollares{
+        .contGrid{
+            @include grid(270px, repeat(8, 330px), center, none, none, 40px);
+            grid-template-areas: 
+            "collar-1"
+            "collar-2"
+            "collar-3"
+            "collar-4"
+            "collar-5"
+            "collar-6"
+            "collar-7"
+            "collar-8"
+            ;
+        }
+    }
+}
+@media (max-width:550px){
+    .mainCuidado{
+        .titulo{
+            h1{
+                font-size: 28px;
+            }
+        }
+        .contCuidado{
+            .articulo-1{
+                width: 65%;
+            }
+        }
+    }
+}
 @media (max-width:485px){
 
     /* main index */

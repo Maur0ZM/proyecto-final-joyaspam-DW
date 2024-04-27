@@ -13,9 +13,17 @@
 }
 
 @media (max-width:1250px) {
-    .direcciones{
-        display: none;
-    } 
+     
+    .contNovedades{
+        .contArticulos{
+            .direcciones{
+                display: none;
+                button{
+                display: none;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width:1200px){
@@ -36,28 +44,77 @@
     }
 
     /* main collares */
-
-}
-@media (max-width:1000px){
-
-    /* main index */
-    .imagenMain{
-        .imagen-principal-1{
-            display: none; 
-        }
-        .imagen-principal-1-r{
-            display: inline-flex;  
+    .mainCollares{
+        .contGrid{
+            @include grid(repeat(2, 270px), repeat(4, 330px), center, none, none, 60px);
+            grid-template-areas: 
+            "collar-1 collar-2"
+            "collar-3 collar-4"
+            "collar-5 collar-6"
+            "collar-7 collar-8"
+            ;
         }
     }
-    .imagenMain2{
-        .imagen-principal-2{
-            display: none; 
-        }
-        .imagen-principal-2-r{
-            display: inline-flex;  
-        }
-        button{
-            left: 50%;
+    /* main nosotros*/
+    .mainNosotros{
+        .contNosotros{
+        width: 70%;
+        .fotoPerfil{
+            width: 500px;
         }
     }
 }
+}
+
+@media (max-width:1005px){
+    .mainProducts{
+        width: 100%;
+        .contGeneralProducto{
+            .contProducto{
+                @include grid(100%, auto, none, none, none, none);
+                grid-template-areas: 
+                "seccion-1"
+                "seccion-1"
+                "seccion-2"
+                "seccion-3"
+                "seccion-4"
+                "seccion-5"
+                "seccion-5"
+                ;
+                .contImgProducto{
+                    grid-area: seccion-1;
+                    .carrusel{
+                        display: none;
+                    }
+                }
+                .contPoliticas{
+                    grid-area: seccion-4;
+                }
+                .contDescripcionProducto{
+                    @include flex(column, center, center, 10px);
+                    grid-area: seccion-2;
+                }
+                .contCompra{
+                    grid-area: seccion-3;
+                }
+                .contInformacionProducto{
+                    grid-area: seccion-5;
+                }
+            }
+            
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
