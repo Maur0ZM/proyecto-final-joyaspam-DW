@@ -218,31 +218,6 @@ footer .whatsapp {
             .contNovedades .contArticulos .articulos .desArticulos .enlace-imagen .imagen-hover:hover {
               opacity: 1; }
 
-.contAros {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 45px;
-  margin-top: 30px;
-  margin-bottom: 100px; }
-  .contAros button {
-    all: unset;
-    cursor: pointer; }
-  .contAros .seccion-1, .contAros .seccion-2 {
-    display: flex;
-    flex-direction: none;
-    justify-content: center;
-    align-items: none;
-    gap: 30px; }
-    .contAros .seccion-1 .desArticulos, .contAros .seccion-2 .desArticulos {
-      display: flex;
-      flex-direction: column;
-      justify-content: none;
-      align-items: center;
-      gap: none; }
-
 .mainNosotros {
   width: 100%;
   display: flex;
@@ -512,7 +487,7 @@ footer .whatsapp {
   .articulos {
     flex-wrap: wrap; }
   /* main aros */
-  .seccion-1, .contAros .seccion-2 {
+  .seccion-1 {
     flex-wrap: wrap; }
   .seccion-2 {
     flex-wrap: wrap; }
