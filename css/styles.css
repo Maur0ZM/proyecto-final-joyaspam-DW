@@ -243,68 +243,6 @@ footer .whatsapp {
       align-items: center;
       gap: none; }
 
-.mainCollares {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 45px;
-  margin: 50px 0px 150px 0px; }
-  .mainCollares .contGrid {
-    display: grid;
-    grid-template-columns: repeat(4, 270px);
-    grid-template-rows: repeat(2, 330px);
-    align-items: none;
-    grid-area: none;
-    justify-content: center;
-    gap: 15px;
-    grid-template-areas: "collar-1 collar-2 collar-3 collar-4" "collar-5 collar-6 collar-7 collar-8";
-    width: 100%; }
-    .mainCollares .contGrid .collar-1 {
-      grid-area: collar-1;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: none; }
-    .mainCollares .contGrid .collar-2 {
-      grid-area: collar-2;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: none; }
-    .mainCollares .contGrid .collar-3 {
-      grid-area: collar-3; }
-    .mainCollares .contGrid .collar-4 {
-      grid-area: collar-4; }
-    .mainCollares .contGrid .collar-5 {
-      grid-area: collar-5; }
-    .mainCollares .contGrid .collar-6 {
-      grid-area: collar-6; }
-    .mainCollares .contGrid .collar-7 {
-      grid-area: collar-7; }
-    .mainCollares .contGrid .collar-8 {
-      grid-area: collar-8; }
-    .mainCollares .contGrid .product {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: none; }
-      .mainCollares .contGrid .product .enlace-imagen {
-        position: relative; }
-        .mainCollares .contGrid .product .enlace-imagen .imagen-hover {
-          width: 100%;
-          height: 288px;
-          position: absolute;
-          top: 0;
-          left: 0;
-          opacity: 0;
-          transition: opacity 0.3s ease; }
-          .mainCollares .contGrid .product .enlace-imagen .imagen-hover:hover {
-            opacity: 1; }
-
 .mainNosotros {
   width: 100%;
   display: flex;
@@ -501,6 +439,58 @@ footer .whatsapp {
           justify-content: none;
           align-items: none;
           gap: 20px; }
+
+.mainProducts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 45px;
+  margin: 50px 0px 150px 0px; }
+  .mainProducts .contGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 270px);
+    grid-template-rows: repeat(2, 330px);
+    align-items: none;
+    grid-area: none;
+    justify-content: center;
+    gap: 15px;
+    grid-template-areas: "product-1 product-2 product-3 product-4" "product-5 product-6 product-7 product-8";
+    width: 100%; }
+    .mainProducts .contGrid .product-1 {
+      grid-area: product-1; }
+    .mainProducts .contGrid .product-2 {
+      grid-area: product-2; }
+    .mainProducts .contGrid .product-3 {
+      grid-area: product-3; }
+    .mainProducts .contGrid .product-4 {
+      grid-area: product-4; }
+    .mainProducts .contGrid .product-5 {
+      grid-area: product-5; }
+    .mainProducts .contGrid .product-6 {
+      grid-area: product-6; }
+    .mainProducts .contGrid .product-7 {
+      grid-area: product-7; }
+    .mainProducts .contGrid .product-8 {
+      grid-area: product-8; }
+    .mainProducts .contGrid .products {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: none; }
+      .mainProducts .contGrid .products .enlace-imagen {
+        position: relative; }
+        .mainProducts .contGrid .products .enlace-imagen .imagen-hover {
+          width: 100%;
+          height: 288px;
+          position: absolute;
+          top: 0;
+          left: 0;
+          opacity: 0;
+          transition: opacity 0.3s ease; }
+          .mainProducts .contGrid .products .enlace-imagen .imagen-hover:hover {
+            opacity: 1; }
 
 /*MediaQ*/
 @media (max-width: 1376px) {

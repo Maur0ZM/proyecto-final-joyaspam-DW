@@ -1,40 +1,38 @@
-.mainCollares {
+.mainProducts{
     @include flex(column, center, center, 45px);
     margin: 50px 0px 150px 0px;
     .contGrid{
         @include grid(repeat(4, 270px), repeat(2, 330px), center, none, none, 15px);
         grid-template-areas: 
-        "collar-1 collar-2 collar-3 collar-4"
-        "collar-5 collar-6 collar-7 collar-8"
+        "product-1 product-2 product-3 product-4"
+        "product-5 product-6 product-7 product-8"
         ;
         width: 100%;
-        .collar-1{
-            grid-area: collar-1;
-            @include flex(column, center, center, none);
+        .product-1{
+            grid-area: product-1;
         }
-        .collar-2{
-            grid-area: collar-2;
-            @include flex(column, center, center, none);
+        .product-2{
+            grid-area: product-2;
         }
-        .collar-3{
-            grid-area: collar-3;
+        .product-3{
+            grid-area: product-3;
         }
-        .collar-4{
-            grid-area: collar-4;
+        .product-4{
+            grid-area: product-4;
         }
-        .collar-5{
-            grid-area: collar-5;
+        .product-5{
+            grid-area: product-5;
         }
-        .collar-6{
-            grid-area: collar-6;        
+        .product-6{
+            grid-area: product-6;        
         }
-        .collar-7{
-            grid-area: collar-7;        
+        .product-7{
+            grid-area: product-7;        
         }
-        .collar-8{
-            grid-area: collar-8;
+        .product-8{
+            grid-area: product-8;
         }
-        .product{
+        .products{
             @include flex(column, center, center, none);
             .enlace-imagen{
                 position: relative;

@@ -1,4 +1,3 @@
-
 /*Utilities*/
 @import "./utilities/fuentes";
 @import "./utilities/maps";
@@ -15,13 +14,13 @@
 @import "./layout/footer";
 @import "./layout/main-index";
 @import "./layout/main-aros";
-@import "./layout/main-collares";
 @import "./layout/main-nosotros";
 @import "./layout/main-PYG";
 @import "./layout/main-cuidados";
 
 /*Components*/
 @import "./components/products";
+@import "./components/cont-products";
 
 /*MediaQ*/
 @import "./layout/mediaQ/min1000px";
