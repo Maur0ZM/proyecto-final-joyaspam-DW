@@ -10,16 +10,9 @@
         }
         @include flex(column, center, center, 30px);
         display: flex;
-        // flex-direction: column;
-        // align-items: center;
-        // justify-content: center;
-        // gap: 30px;
         margin-top: 50px;
         .articulo-1{
             @include flex(column, none, center, none);
-            // display: flex;
-            // flex-direction: column;
-            // align-items: center;
             width: 50%;
             ul{
                 @include flex(column, none, none, 10px);
@@ -35,7 +28,5 @@
     }
     .titulo{
         @include flex(none, center, none ,none);
-        // display: flex;
-        // justify-content: center;
     }
 }

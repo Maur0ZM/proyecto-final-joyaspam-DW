@@ -94,18 +94,18 @@
     }
 }
 @media (max-width:600px){
-    .mainCollares{
+    .mainProducts{
         .contGrid{
             @include grid(270px, repeat(8, 330px), center, none, none, 40px);
             grid-template-areas: 
-            "collar-1"
-            "collar-2"
-            "collar-3"
-            "collar-4"
-            "collar-5"
-            "collar-6"
-            "collar-7"
-            "collar-8"
+            "product-1"
+            "product-2"
+            "product-3"
+            "product-4"
+            "product-5"
+            "product-6"
+            "product-7"
+            "product-8"
             ;
         }
     }
@@ -146,8 +146,14 @@
         width: 90%;
     }
     }
-    /* main aros */
-
+    /* main PCYG */
+    .contPC-G{
+        .contArticulosPC{
+            .articuloPC-1{
+                width: 80%;
+            }
+        }
+    }
     
 }
 

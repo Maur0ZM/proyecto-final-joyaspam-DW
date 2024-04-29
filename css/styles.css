@@ -117,22 +117,20 @@ footer .whatsapp {
     cursor: pointer;
     width: 150px;
     height: 50px;
-    background-image: linear-gradient(135deg, #B5B9DE 40%, #d5d7e3 100%);
+    background-image: linear-gradient(135deg, #dddddd 40%, #aaaaaa 100%);
     display: flex;
     flex-direction: none;
     justify-content: center;
     align-items: center;
     gap: none;
     position: absolute;
-    /* Para que el botton siga en la misma posicion
-        tengo que ocupar %, no px absoluto */
     left: 25%;
     bottom: 38%;
     transform: translateX(-50%);
     border-radius: 5px;
     transition: box-shadow 0.5s ease; }
     .imagenMain2 a:hover {
-      box-shadow: 2px 2px 5px #d5d7e3; }
+      box-shadow: 2px 2px 5px #5d5f6b; }
   .imagenMain2 .imagen-principal-2-r {
     display: none; }
 
@@ -184,12 +182,7 @@ footer .whatsapp {
       flex-direction: none;
       justify-content: center;
       align-items: center;
-      gap: none;
-      border-radius: 50%;
-      border: solid 1px #B5B9DE;
-      height: 60px;
-      width: 60px;
-      box-shadow: 5px 5px 10px #888888; }
+      gap: none; }
       .contNovedades .contArticulos .direcciones button {
         all: unset;
         cursor: pointer; }
@@ -256,19 +249,19 @@ footer .whatsapp {
     justify-content: center;
     align-items: center;
     gap: 10px; }
-  .contPC-G .articuloPC-1, .contPC-G .articuloPC-2, .contPC-G .articuloPC-3, .contPC-G .articuloPC-4 {
-    display: flex;
-    flex-direction: column;
-    justify-content: none;
-    align-items: center;
-    gap: 20px;
-    width: 90%; }
-    .contPC-G .articuloPC-1 ul, .contPC-G .articuloPC-2 ul, .contPC-G .articuloPC-3 ul, .contPC-G .articuloPC-4 ul {
+    .contPC-G .contArticulosPC .articuloPC-1, .contPC-G .contArticulosPC .articuloPC-2, .contPC-G .contArticulosPC .articuloPC-3, .contPC-G .contArticulosPC .articuloPC-4 {
       display: flex;
       flex-direction: column;
       justify-content: none;
-      align-items: none;
-      gap: 10px; }
+      align-items: center;
+      gap: 20px;
+      width: 50%; }
+      .contPC-G .contArticulosPC .articuloPC-1 ul, .contPC-G .contArticulosPC .articuloPC-2 ul, .contPC-G .contArticulosPC .articuloPC-3 ul, .contPC-G .contArticulosPC .articuloPC-4 ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: none;
+        align-items: none;
+        gap: 10px; }
 
 .mainCuidado {
   margin-top: 100px;
@@ -492,7 +485,7 @@ footer .whatsapp {
   .seccion-2 {
     flex-wrap: wrap; }
   /* main collares */
-  .mainCollares .contGrid {
+  .mainProducts .contGrid {
     display: grid;
     grid-template-columns: repeat(2, 270px);
     grid-template-rows: repeat(4, 330px);
@@ -500,7 +493,7 @@ footer .whatsapp {
     grid-area: none;
     justify-content: center;
     gap: 20px;
-    grid-template-areas: "collar-1 collar-2" "collar-3 collar-4" "collar-5 collar-6" "collar-7 collar-8"; }
+    grid-template-areas: "product-1 product-2" "product-3 product-4" "product-5 product-6" "product-7 product-8"; }
   /* main nosotros*/
   .mainNosotros .contNosotros {
     width: 70%; }
@@ -597,7 +590,7 @@ footer .whatsapp {
     width: 100%; } }
 
 @media (max-width: 600px) {
-  .mainCollares .contGrid {
+  .mainProducts .contGrid {
     display: grid;
     grid-template-columns: 270px;
     grid-template-rows: repeat(8, 330px);
@@ -605,7 +598,7 @@ footer .whatsapp {
     grid-area: none;
     justify-content: center;
     gap: 40px;
-    grid-template-areas: "collar-1" "collar-2" "collar-3" "collar-4" "collar-5" "collar-6" "collar-7" "collar-8"; } }
+    grid-template-areas: "product-1" "product-2" "product-3" "product-4" "product-5" "product-6" "product-7" "product-8"; } }
 
 @media (max-width: 550px) {
   .mainCuidado .titulo h1 {
@@ -625,7 +618,9 @@ footer .whatsapp {
   /* main nosotros */
   .mainNosotros .contNosotros {
     width: 90%; }
-  /* main aros */ }
+  /* main PCYG */
+  .contPC-G .contArticulosPC .articuloPC-1, .contPC-G .contArticulosPC .articuloPC-2, .contPC-G .contArticulosPC .articuloPC-3, .contPC-G .contArticulosPC .articuloPC-4 {
+    width: 80%; } }
 
 @media (max-width: 540px) {
   .contPC-G h1 {
