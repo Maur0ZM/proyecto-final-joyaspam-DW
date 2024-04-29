@@ -31,6 +31,7 @@ header {
   grid-area: none;
   justify-content: none;
   gap: 10px;
+  grid-auto-flow: dense;
   grid-template-areas: "seccion-1 seccion-1 seccion-1" "seccion-2 seccion-3 seccion-4" "seccion-5 seccion-5 seccion-5"; }
   header .eslogan {
     display: flex;
@@ -322,6 +323,7 @@ footer .whatsapp {
       grid-area: none;
       justify-content: none;
       gap: 50px;
+      grid-auto-flow: dense;
       grid-template-areas: "seccion-1 seccion-3" "seccion-1 seccion-4" "seccion-1 seccion-5" "seccion-2 seccion-5" ". seccion-5"; }
       .mainProducts .contGeneralProducto .contProducto .contImgProducto {
         grid-area: seccion-1;
@@ -423,6 +425,7 @@ footer .whatsapp {
     grid-area: none;
     justify-content: center;
     gap: 15px;
+    grid-auto-flow: dense;
     grid-template-areas: "product-1 product-2 product-3 product-4" "product-5 product-6 product-7 product-8";
     width: 100%; }
     .mainProducts .contGrid .product-1 {
@@ -493,6 +496,7 @@ footer .whatsapp {
     grid-area: none;
     justify-content: center;
     gap: 20px;
+    grid-auto-flow: dense;
     grid-template-areas: "product-1 product-2" "product-3 product-4" "product-5 product-6" "product-7 product-8"; }
   /* main nosotros*/
   .mainNosotros .contNosotros {
@@ -511,6 +515,7 @@ footer .whatsapp {
       grid-area: none;
       justify-content: none;
       gap: none;
+      grid-auto-flow: dense;
       grid-template-areas: "seccion-1" "seccion-1" "seccion-2" "seccion-3" "seccion-4" "seccion-5" "seccion-5"; }
       .mainProducts .contGeneralProducto .contProducto .contImgProducto {
         grid-area: seccion-1; }
@@ -598,6 +603,7 @@ footer .whatsapp {
     grid-area: none;
     justify-content: center;
     gap: 40px;
+    grid-auto-flow: dense;
     grid-template-areas: "product-1" "product-2" "product-3" "product-4" "product-5" "product-6" "product-7" "product-8"; } }
 
 @media (max-width: 550px) {

@@ -14,4 +14,5 @@
     grid-area: $area;
     justify-content: $justify;
     gap: $gap;
+    grid-auto-flow: dense;
 }
